@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Saved_Questions"
+    tools:showIn="@layout/activity_saved__questions"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Question"
+        android:textSize="30sp"
+        android:id="@+id/Saved_question_view"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:textColor="#FFF"/>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choice 1"
+            android:id="@+id/Saved_Choice1_view"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:clickable="true"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:clickable="true"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choice 2"
+            android:id="@+id/Saved_Choice2_view"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:clickable="true"
+            android:id="@+id/Saved_Choice3_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="choice 3"/>
+        <TextView
+            android:clickable="true"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choice 4"
+            android:id="@+id/Saved_Choice4_view"
+            />
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="previous"
+        android:onClick="Previous_button"
+        android:background="#FFD600"
+        android:id="@+id/Saved_Previous_Button"
+        android:layout_alignParentLeft="true"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginLeft="5dp"
+        android:background="#FFD600"
+        android:layout_weight="1"
+        android:id="@+id/Saved_Next_Button"
+        android:layout_alignParentRight="true"
+        android:onClick="Next_button" />
+</LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:textSize="15sp"
+        android:layout_margin="10dp"
+        android:id="@+id/Answer_view"/>
+</LinearLayout>

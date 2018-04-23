@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Quiz2Activity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_quiz2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Question"
+        android:textSize="25sp"
+        android:textColor="#FFFFFF"
+        android:id="@+id/question_view"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Choice 1"
+                android:id="@+id/Choice1_view"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:clickable="true"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:clickable="true"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Choice 2"
+                android:id="@+id/Choice2_view"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"/>
+
+                <TextView
+                    android:layout_marginBottom="10dp"
+                    android:textSize="20sp"
+                    android:padding="10dp"
+                    android:clickable="true"
+                    android:id="@+id/Choice3_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="choice 3"/>
+                <TextView
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Choice 4"
+                    android:id="@+id/Choice4_view"
+                    />
+        </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:id="@+id/Next_button"
+            android:background="#FFD600"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:onClick="next"/>
+    </RelativeLayout>
+</LinearLayout>

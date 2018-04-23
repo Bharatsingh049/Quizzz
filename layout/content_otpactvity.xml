@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".OTPActvity"
+    tools:showIn="@layout/activity_otpactvity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Sign up"
+        android:id="@+id/sign_up_Text_view"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Phone number "
+        android:id="@+id/number"
+        android:layout_below="@+id/sign_up_Text_view"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Name"
+            android:id="@+id/name"
+            android:layout_below="@+id/number"/>
+     <Button
+         android:layout_width="match_parent"
+         android:layout_marginTop="10dp"
+         android:layout_centerHorizontal="true"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/name"
+         android:id="@+id/Sign_in"
+         android:text="Sign in"
+         android:background="#FFD600"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the OTP"
+            android:id="@+id/Enter_OTP"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            android:layout_below="@+id/sign_up_Text_view"/>
+        <Button
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Verify"
+            android:id="@+id/Verify_OTP"
+            android:textColor="#FFD600"
+            android:layout_below="@+id/Enter_OTP"/>
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Category"
+        >
+      <menu>
+
+
+
+<group android:checkableBehavior="single"
+        android:id="@+id/menu_top">
+
+<item android:title="General knowledge"
+    android:id="@+id/General_knowledge"
+    android:icon="@drawable/knowledge"/>
+<item android:title="Science and nature"
+    android:id="@+id/Science_nature"
+    android:icon="@drawable/science"/>
+<item android:title="Sports"
+    android:id="@+id/Sports"
+    android:icon="@drawable/sports"/>
+<item android:title="Politics"
+    android:id="@+id/Politics"
+    android:icon="@drawable/politics"/>
+<item android:title="Comics"
+    android:id="@+id/Comics"
+    android:icon="@drawable/comics"/>
+<item android:title="History"
+    android:id="@+id/History"
+    android:icon="@drawable/history"/>
+</group>
+
+
+      </menu>
+    </item>
+    <item android:title="Others">
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_bottom">
+        <item android:title=" Attended Questions "
+            android:icon="@drawable/saved"
+            android:id="@+id/Attended_question"/>
+        <item android:title="Settings"
+            android:id="@+id/User_Setting"
+            android:icon="@drawable/settings"/>
+    </group>
+    </item>
+</menu>
